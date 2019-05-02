@@ -66,6 +66,10 @@ plt.plot(xpointsM,ypointsM,label='Mars')
 plt.xlabel('x [m]')
 plt.ylabel('y [m]')
 plt.legend()
+
+arrayedyptsM=np.array(ypointsM)
+yimpactM=np.where(arrayedyptsM<0)
+print(xpointsM[int(yimpactM[0])])
 #p1.show()
 """
 #try different values of m
